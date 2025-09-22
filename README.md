@@ -23,3 +23,6 @@ Aplikasi ini dirancang untuk membantu proses **pengambilan keputusan** menggunak
 
 ## 🖼️ Tampilan Aplikasi Sistem Pendukung Keputusan
 
+<img src="https://raw.githubusercontent.com/boyzfire09/Sistem-Pendukung-Keputusan-Metode-AHP/main/src/Screenshot%20(449).png" width="400"> <img src="https://raw.githubusercontent.com/boyzfire09/Sistem-Pendukung-Keputusan-Metode-AHP/main/src/Screenshot%20(455).png" width="400">
+<img src="https://raw.githubusercontent.com/boyzfire09/Sistem-Pendukung-Keputusan-Metode-AHP/main/src/Screenshot%20(451).png" width="400"> <img src="https://raw.githubusercontent.com/boyzfire09/Sistem-Pendukung-Keputusan-Metode-AHP/main/src/Screenshot%20(452).png" width="400">
+<img src="https://raw.githubusercontent.com/boyzfire09/Sistem-Pendukung-Keputusan-Metode-AHP/main/src/Screenshot%20(469).png" width="400"> <img src="https://raw.githubusercontent.com/boyzfire09/Sistem-Pendukung-Keputusan-Metode-AHP/main/src/Screenshot%20(470).png" width="400">
