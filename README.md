@@ -1,6 +1,6 @@
 ## 📚 Aplikasi Sistem Pendukung Keputusan
 
-Proyek ini merupakan aplikasi berbasis Java yang saya buat sebagai Tugas Akhir saya **Skripsi** pada jurusan **Teknik Informatika**.  
+Aplikasi berbasis Java yang saya buat sebagai Tugas Akhir saya **Skripsi** pada jurusan **Teknik Informatika**.  
 Aplikasi ini dirancang untuk membantu proses **pengambilan keputusan** menggunakan metode *Analytical Hierarchy Process (AHP)*.
 
 ## 🎯 Fitur Utama
