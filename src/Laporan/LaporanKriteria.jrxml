@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM kriteria]]>
+	</queryString>
+	<field name="kd_kriteria" class="java.lang.String"/>
+	<field name="nama_kriteria" class="java.lang.String"/>
+	<field name="prioritas_kepentingan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="150" splitType="Stretch">
+			<staticText>
+				<reportElement x="211" y="0" width="163" height="31"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GS SHOP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="31" width="203" height="24"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GAMER'S SUPERSTORE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="55" width="308" height="21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jl. Margonda No.2 358 Lt, Kemiri Muka, Kecamatan Beji]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="76" width="163" height="22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[Kota Depok, Jawa Barat 16423]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="98" width="555" height="1"/>
+			</line>
+			<image>
+				<reportElement x="15" y="0" width="121" height="98"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\Documents\\NetBeansProjects\\TA8\\src\\img\\logoshop1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="188" y="111" width="186" height="27"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA KRITERIA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="26" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="1" width="188" height="25"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Column header" x="0" y="1" width="186" height="25" forecolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Kriteria]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="186" y="1" width="166" height="25"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Column header" x="188" y="2" width="164" height="24" forecolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Kriteria]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="352" y="1" width="193" height="25"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Column header" x="352" y="0" width="193" height="25" forecolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prioritas Kepentingan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="555" height="18"/>
+				<rectangle>
+					<reportElement x="0" y="0" width="186" height="18"/>
+				</rectangle>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="0" y="1" width="186" height="17"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{kd_kriteria}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement x="186" y="0" width="166" height="18"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="352" y="0" width="193" height="18"/>
+				</rectangle>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="186" y="0" width="166" height="17"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nama_kriteria}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="352" y="0" width="193" height="18"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{prioritas_kepentingan}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement x="374" y="0" width="42" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Depok,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="20" width="53" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Admin ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="363" y="78" width="145" height="1"/>
+			</line>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="416" y="0" width="115" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
